@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page">
+
+        <section class="page__wrapper page__wrapper_inner">
+
+            <!-- Include your modules here -->
+            {{> topline/topline}}
+            {{> page-header/page-header}}
+            {{> page-title/page-title-equipment}}
+            {{> equipment/equipment}}
+            {{> banner/banner-equipment}}
+            <div class="page__buffer"></div>
+
+        </section>
+
+        <footer class="page__footer">
+            {{> footer/footer}}
+            {{> bottomline/bottomline}}
+        </footer>
+
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <script src="%=static=%js/separate-js/jquery.js"></script>
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

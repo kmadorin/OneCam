@@ -1,0 +1,12 @@
+.bottomline {
+  background: #373737;
+  padding: 28px 0;
+  &__in {
+    @extend %in;
+  }
+}
+.copyright {
+  font-size: 14px;
+  color: #FFF;
+  margin: 0;
+}

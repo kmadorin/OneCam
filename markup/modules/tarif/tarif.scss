@@ -1,0 +1,111 @@
+.tarif {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 55px 30px;
+  background-color: #FFF;
+  border: 1px solid #DFDFDF;
+  min-height: 511px;
+  position: relative;
+  &_recommended {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -4px;
+      top: -5px;
+      @include bg($recommended-flag);
+    }
+  }
+  &:hover {
+    -moz-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  &__header {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  &__heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    margin: 0;
+  }
+  &__footer {}
+  &__more {
+    width: 203px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #4F4F4F;
+    background-image: -moz-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: -o-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: -webkit-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: linear-gradient(to top, #DE192C 0%, #F7263A 100%);
+    &:hover {
+      background-image: -moz-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: -o-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: -webkit-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: linear-gradient(to top, #F7263A 0%, #DE192C 100%);
+    }
+  }
+}
+
+.tarif-price {
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 40px;
+  &__number {
+    font-size: 48px;
+    font-family: $futurisBold;
+    color: $red;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+  &__dimension {
+    display: inline-block;
+    span {
+      display: block;
+      font-size: 20px;
+      padding: 2px 0;
+      padding-top: 1px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      &:first-child {
+        border-bottom: 2px solid $red;
+      }
+    }
+  }
+}
+
+.tarif-list {
+  @include nl;
+  margin-bottom: 40px;
+  &__item {
+    font-size: 18px;
+    color: #4F4F4F;
+    margin-top: 10px;
+    position: relative;
+    &:before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      left: -15px;
+      top: 8px;
+      background: $red;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

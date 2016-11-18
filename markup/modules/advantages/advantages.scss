@@ -1,0 +1,45 @@
+.advantages {
+  &__content {
+    @include cf;
+  }
+  &__col {
+    width: 50%;
+    float: left;
+    padding: 0 6px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+.advantages-list {
+  @include nl;
+  padding: 0px 40px;
+  padding-top: 27px;
+  min-height: 223px;
+  background: #FFF;
+  &__item {
+    font-size: 18px;
+    margin-top: 15px;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      position: absolute;
+      top: 9px;
+      left: -18px;
+      background: $red;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

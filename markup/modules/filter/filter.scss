@@ -1,0 +1,114 @@
+.filter {
+  margin-bottom: 65px;
+  &__in {
+    @extend %in;
+    border: 1px solid #DFDFDF;
+    @include cf;
+    background: #FFF;
+  }
+  &__col {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &_third {
+      width: 310px;
+      padding: 5px 0;
+      padding-right: 45px;
+      text-align: right;
+    }
+    &_second {
+      width: 325px;
+      text-align: right;
+      padding: 18px 0;
+      padding-right: 38px;
+    }
+    &_first {
+      width: 324px;
+      padding: 18px 0;
+      padding-left: 45px;
+    }
+  }
+  &__label {
+    font-size: 16px;
+  }
+  &__pick {
+    width: 162px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: 300;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4F4F4F;
+    background-image: -moz-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: -o-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: -webkit-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: linear-gradient(to top, #DE192C 0%, #F7263A 100%);
+    &:hover {
+      background-color: #4F4F4F;
+      background-image: -moz-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: -o-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: -webkit-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: linear-gradient(to top, #F7263A 0%, #DE192C 100%);
+    }
+  }
+  &__dropdown {
+    &_equipment {}
+  }
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+  .dropdown__toggle {
+    color: $red;
+    position: relative;
+    padding: 0 15px;
+    cursor: pointer;
+    display: inline-block;
+    &:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 5px solid $red;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      position: absolute;
+      right: 0px;
+      top: 7px;
+    }
+  }
+}
+.dropdown-list {
+  @include nl;
+  display: none;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  top: 180%;
+  box-shadow: 0 0 9px rgba(7, 8, 8, 0.23);
+  background-color: #FFF;
+  padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  &.active {
+    display: block;
+  }
+  &__item {
+    font-size: 16px;
+    margin-top: 18px;
+    cursor: pointer;
+    &:hover {
+      color: $red;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+
+
+

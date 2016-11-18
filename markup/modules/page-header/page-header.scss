@@ -1,0 +1,85 @@
+.page-header {
+  background: #fff;
+  &__in {
+    @extend %in;
+    @include cf;
+    padding: 20px 0;
+  }
+}
+.logo {
+  width: 149px;
+  height: 62px;
+  float: left;
+}
+.main-nav {
+  float: right;
+}
+.main-menu {
+  @include nl;
+  @include cf;
+  &__item {
+    display: block;
+    float: left;
+    position: relative;
+    margin-left: 15px;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      .main-menu__submenu {
+        display: block;
+      }
+    }
+  }
+  &__itemlink {
+    display: block;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    padding: 24px 0;
+    &:hover {
+      color: $red;
+    }
+  }
+  &__itemlink_active {
+    color: $red;
+  }
+  &__submenu {
+    display: none;
+    @include nl;
+    position: absolute;
+    left: 0;
+    right: -50px;
+    top: 60px;
+    padding: 0 25px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    background-color: #FFF;
+    -moz-box-shadow: 0 0 9px rgba(7, 8, 8, 0.23);
+    -webkit-box-shadow: 0 0 9px rgba(7, 8, 8, 0.23);
+    box-shadow: 0 0 9px rgba(7, 8, 8, 0.23);
+    z-index: 100;
+    &.active {
+      display: block;
+    }
+  }
+  &__submenuitem {
+    display: block;
+    margin-top: 18px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__submenuitemlink {
+    display: block;
+    padding: 0 10px;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+

@@ -1,0 +1,30 @@
+<section class="tarifs">
+  <!-- begin tarifs__in  -->
+  <div class="tarifs__in">
+    <header class="tarifs__header">
+      <h2 class="tarifs__heading">
+        Тарифы
+      </h2>
+    </header>
+    <!-- begin tarifs__row  -->
+    <div class="tarifs__row">
+      <!-- begin tarifs__col  -->
+      <div class="tarifs__col tarifs__col_first">
+        {{> tarif/tarif-basic}}
+      </div>
+      <!-- end tarifs__col -->
+      <!-- begin tarifs__col  -->
+      <div class="tarifs__col">
+        {{> tarif/tarif-standard}}
+      </div>
+      <!-- end tarifs__col -->
+      <!-- begin tarifs__col  -->
+      <div class="tarifs__col tarifs__col_last">
+        {{> tarif/tarif-hd}}
+      </div>
+      <!-- end tarifs__col -->
+    </div>
+    <!-- end tarifs__row -->
+  </div>
+  <!-- end tarifs__in -->
+</section>

@@ -1,0 +1,125 @@
+.cart {
+  padding-bottom: 127px;
+  background: #F1EFEF;
+  &__in {
+    @extend %in;
+  }
+  &__row {
+    @include cf;
+    margin-bottom: 60px;
+  }
+  &__photo {
+    width: 465px;
+    margin-right: 80px;
+    float: left;
+    border: 1px solid #DFDFDF;
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__right {
+    float: right;
+    width: 420px;
+  }
+  &__name {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+  &__shortdesc {
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  &__price {
+    padding: 25px 0;
+    font-size: 36px;
+    font-weight: 300;
+  }
+  &__pricenumber {
+    font-size: 48px;
+    font-family: $futurisBold;
+    color: $red;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  &__num {
+    @include cf;
+  }
+  &__numlabel {
+    font-size: 24px;
+    margin-right: 30px;
+    font-weight: 300;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__quantity {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__buy {
+    width: 184px;
+    height: 44px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    text-align: center;
+    position: relative;
+    line-height: 42px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+    background-color: #4F4F4F;
+    background-image: -moz-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: -o-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: -webkit-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: linear-gradient(to top, #DE192C 0%, #F7263A 100%);
+    &:hover {
+      background-color: #4F4F4F;
+      background-image: -moz-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: -o-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: -webkit-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: linear-gradient(to top, #F7263A 0%, #DE192C 100%);
+    }
+    &:after {
+      content: "";
+      @include bg($basket-icon);
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      margin-left: 5px;
+    }
+  }
+}
+.cart-list {
+  @include nl;
+  padding-left: 20px;
+  .cart-list__item {
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 20px;
+    &:before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $red;
+      position: absolute;
+      top: 8px;
+      left: -16px;
+    }
+  }
+}
+
+.cart-table {
+  td {
+    border: 1px solid #BAB9B9;
+    padding: 15px 40px
+  }
+}

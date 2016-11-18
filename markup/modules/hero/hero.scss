@@ -1,0 +1,85 @@
+.hero {
+  background: url(../img/content/backgrounds/hero-bg.jpg) 50% 0 no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 521px;
+  &__in {
+    @extend %in;
+    @include cf;
+    padding: 60px 0;
+  }
+}
+
+.hero-form {
+  &__wrapper {
+    float: right;
+    background: rgba(255,255,255,.73);
+    width: 470px;
+    padding: 45px 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  &__field {
+    width: 100%;
+    input[type="text"],input[type="tel"] {
+      height: 55px;
+      width: 100%;
+      display: block;
+      line-height: 55px;
+      background-color: #FFF;
+      border: 1px solid #C3C1C1;
+      margin-bottom: 50px;
+      padding-left: 19px;
+      font-size: 18px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      &:focus {
+        outline: 1px solid #9CBCE3;
+        -moz-box-shadow: 0 0 5px #93D0FF;
+        -webkit-box-shadow: 0 0 5px #93D0FF;
+        box-shadow: 0 0 5px #93D0FF;
+        @include placeholder {
+          color: #2580C7;
+        }
+      }
+    }
+  }
+  &__footer {
+    @include cf;
+  }
+  &__footertext {
+    float: left;
+    font-size: 16px;
+    line-height: 24px;
+    width: 170px;
+    margin: 0;
+  }
+  &__submit {
+    float: right;
+    input {
+      width: 184px;
+      height: 50px;
+      line-height: 46px;
+      color: #FFF;
+      outline: 0;
+      border: 0;
+      font-size: 16px;
+      background-color: #4F4F4F;
+      background-image: -moz-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+      background-image: -o-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+      background-image: -webkit-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+      background-image: linear-gradient(to top, #DE192C 0%, #F7263A 100%);
+      &:focus,&:hover {
+        background-color: #4F4F4F;
+        background-image: -moz-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+        background-image: -o-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+        background-image: -webkit-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+        background-image: linear-gradient(to top, #F7263A 0%, #DE192C 100%);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,31 @@
+.tarifs {
+  padding-bottom: 60px;
+  &__in {
+    @extend %in;
+  }
+  &__header {}
+  &__heading {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  &__row {
+    @include cf;
+  }
+  &__col {
+    width: 33.333333%;
+    float: left;
+    padding: 0 9px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &_first {
+      padding-left: 0;
+    }
+    &_last {
+      padding-right: 0;
+    }
+  }
+}

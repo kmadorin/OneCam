@@ -1,0 +1,24 @@
+.banner {
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 498px;
+  &__in {
+    @extend %in;
+  }
+  &_flat {
+    background: url("../img/content/backgrounds/banner-flat.jpg") 50% 0 no-repeat;
+  }
+  &_office {
+    background: url("../img/content/backgrounds/banner-office.jpg") 50% 0 no-repeat;
+  }
+  &_cottage {
+    background: url("../img/content/backgrounds/banner-cottage.jpg") 50% 0 no-repeat;
+  }
+  &_equipment {
+    background: url("../img/content/backgrounds/banner-equipment-flat.jpg") 50% 0 no-repeat;
+    margin-bottom: 80px;
+    padding: 30px 0;
+    @include cf;
+  }
+}

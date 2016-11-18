@@ -1,0 +1,64 @@
+.safety {
+  background: #F1EFEF;
+}
+.safety-list {
+  @include nl;
+  padding-left: 428px;
+  .safety-list__item {
+    position: relative;
+    margin-top: 90px;
+    position: relative;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:before {
+      content: "";
+      width: 3px;
+      height: 77px;
+      background-color: #DF373E;
+      display: block;
+      position: absolute;
+      left: -83px;
+      top: 0;
+    }
+  }
+  .safety-list__itemicon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    &_video {
+      left: -253px;
+      @include bg($safety-video-icon);
+    }
+    &_mobile {
+      left: -239px;
+      @include bg($safety-mobile-icon);
+    }
+    &_control {
+      left: -248px;
+      @include bg($safety-control-icon);
+    }
+    &_monitor {
+      left: -244px;
+      @include bg($safety-monitoring-icon);
+    }
+    &_help {
+      left: -235px;
+      @include bg($safety-help-icon);
+    }
+  }
+  .safety-list__itemcontent {
+    width: 543px;
+  }
+  .safety-list__itemheading {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+  .safety-list__itemtext {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

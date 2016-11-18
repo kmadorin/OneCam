@@ -1,0 +1,27 @@
+.quantity {
+  font-size: 0;
+  &__minus, &__plus, &__value {
+    border: 1px solid #CECECE;
+    width: 34px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 28px;
+    font-size: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #FFF;
+  }
+  &__minus, &__plus {
+    cursor: pointer;
+    &:hover {
+      background: #ED2032;
+      color: #fff;
+    }
+  }
+  .quantity__value {
+    height: 30px;
+    outline: 0;
+  }
+}

@@ -1,0 +1,19 @@
+.recommendations {
+  background: #fff;
+  padding-bottom: 80px;
+  margin-bottom: 110px;
+}
+.recommendations-slider {
+  .tovar {
+    margin-bottom: 0;
+  }
+  &__slide {
+    margin-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+  }
+}
+

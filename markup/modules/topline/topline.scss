@@ -1,0 +1,75 @@
+.topline {
+  background: #5A5959;
+  padding: 6px 0;
+  &__in {
+    @extend %in;
+    @include cf;
+  }
+  &__content {
+    width: 543px;
+    padding-left: 65px;
+    float: right;
+    text-align: right;
+  }
+  &__tel {
+    display: inline-block;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 36px;
+    font-weight: 300;
+    &:hover {
+      color: $red;
+    }
+  }
+  &__lk {
+    display: inline-block;
+    color: #FFF;
+    font-size: 16px;
+    margin-right: 36px;
+    padding: 9px 20px;
+    padding-right: 40px;
+    border: 2px solid $red;
+    text-decoration: none;
+    position: relative;
+    font-weight: 300;
+    &:hover {
+      color: $red;
+      border-color: $red;
+      &:after {
+        @include bg($lk-icon-hover);
+      }
+    }
+    &:after {
+      content: "";
+      display: block;
+      @include bg($lk-icon);
+      position: absolute;
+      right: 13px;
+      top: 11px;
+    }
+  }
+  &__basket {
+    display: inline-block;
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    padding-right: 37px;
+    font-weight: 300;
+    &:after {
+      content: "";
+      display: block;
+      @include bg($basket-icon);
+      position: absolute;
+      top: -2px;
+      right: 0px;
+    }
+    &:hover {
+      color: $red;
+      &:after {
+        @include bg($basket-icon-hover);
+      }
+    }
+  }
+}

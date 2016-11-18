@@ -1,0 +1,86 @@
+.tovar {
+  height: 591px;
+  background-color: #FFF;
+  border: 1px solid #DFDFDF;
+  margin-bottom: 80px;
+  &:hover {
+    -moz-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  &__header {
+    padding-bottom: 40px;
+    text-align: center;
+    &:after {
+      content: '';
+      width: 108px;
+      height: 3px;
+      background-color: $red;
+      display: inline-block;
+    }
+  }
+  &__img {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    height: 270px;
+    img {
+      max-width: 100%;
+      height: auto;
+      display: inline-block;
+    }
+  }
+  &__heading {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+  }
+  &__content {
+    text-align: center;
+  }
+  &__price {
+    font-size: 48px;
+    font-family: $futurisBold;
+    color: $red;
+    margin-bottom: 45px;
+    span {
+      font-family: $futurisLight;
+      font-weight: 300;
+      font-size: 36px;
+      color: #4F4F4F;
+    }
+  }
+  &__buy {
+    width: 184px;
+    height: 44px;
+    background-color: #4F4F4F;
+    background-image: -moz-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: -o-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: -webkit-linear-gradient(bottom, #DE192C 0%, #F7263A 100%);
+    background-image: linear-gradient(to top, #DE192C 0%, #F7263A 100%);
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    line-height: 44px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+    &:hover {
+      background-color: #4F4F4F;
+      background-image: -moz-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: -o-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: -webkit-linear-gradient(bottom, #F7263A 0%, #DE192C 100%);
+      background-image: linear-gradient(to top, #F7263A 0%, #DE192C 100%);
+    }
+    &:after {
+      content: "";
+      @include bg($basket-icon);
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      margin-left: 5px;
+      top: -2px;
+    }
+  }
+}

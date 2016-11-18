@@ -1,0 +1,65 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+body {
+  font-family: $futurisLight;
+  color: $textColor;
+}
+
+.page {
+
+}
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -296px;
+    &_inner {
+      background: #F1EFEF;
+    }
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+.page__buffer {
+    height: 296px;
+}
+
+%in {
+  width: 970px;
+  margin: 0 auto;
+}
+
+a {
+  outline: 0;
+}
+
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  &_inner {
+    padding: 45px 0;
+  }
+  &__in {
+    @extend %in;
+  }
+  &__header {
+    padding-bottom: 90px;
+    &_inner {
+      padding-bottom: 45px;
+    }
+  }
+  &__heading {
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 300;
+    &_light {
+      color: #FFF;
+    }
+  }
+}

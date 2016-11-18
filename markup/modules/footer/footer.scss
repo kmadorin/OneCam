@@ -1,0 +1,92 @@
+.page-footer {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background: #585857;
+  &__in {
+    @extend %in;
+    @include cf;
+  }
+  &__nav {
+    width: 545px;
+    float: left;
+  }
+}
+.footer-menu {
+
+  float: left;
+  @include nl;
+  @include cf;
+  &__col {
+    &:first-child {
+      padding-left: 14px;
+      margin-right: 155px;
+      float: left;
+      width: 205px;
+    }
+    width: 170px;
+    float: right;
+  }
+  &__item {
+    margin-bottom: 20px;
+  }
+  &__itemlink {
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+.footer-contacts {
+  width: 170px;
+  float: right;
+  &__tel {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 16px;
+    color: #FFF;
+    text-decoration: none;
+    &:hover {
+      color: $red;
+    }
+  }
+  &__email {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 16px;
+    color: $red;
+    text-decoration: none;
+  }
+}
+.footer-social {
+  @include nl;
+  &__item {
+    margin-left: 3px;
+    display: inline-block;
+    &_vk {}
+    &_tw {}
+    &_fb {}
+  }
+  &__itemlink {
+    display: block;
+    &_vk {
+      @include bg($vk-icon);
+      &:hover {
+        @include bg($vk-icon-hover);
+      }
+    }
+    &_tw {
+      @include bg($tw-icon);
+      &:hover {
+        @include bg($tw-icon-hover);
+      }
+    }
+    &_fb {
+      @include bg($fb-icon);
+      &:hover {
+        @include bg($fb-icon-hover);
+      }
+    }
+  }
+}
